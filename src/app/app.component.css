@@ -1,0 +1,75 @@
+.img1{
+  background-image: url('src/assets/images/trip.jpg');
+  /* background: #3887CE; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top-margin{
+  margin-top: 20px;
+}
+.top-margin2{
+  margin-top: 24px;
+}
+.position{
+  position: fixed;
+}
+.border-style{
+  border-style: none;
+  border-bottom-style:solid;
+  border-bottom-color:white ;
+}
+
+a.text-clr:hover{
+  color:#00D8FF;
+  border-bottom: #00D8FF solid 2px;
+  box-sizing: border-box;
+
+  /* text-decoration: underline,white; */
+}
+.nav-link{
+  color: #00D8FF;
+}
+.navbar-brand{
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+}
+.txt-style{
+  color:white;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding:11px 1px 29px;
+  text-decoration: none;
+}
+
+.book-btn{
+  color: white;
+  background:#00D8FF;
+  font-size:14px ;
+  font-family: sans-serif;
+  margin:5px 1px ;
+}
+.explore-btn{
+  color: white;
+  background:#00D8FF;
+  font-size:16px ;
+  height: 60px;
+  width: 200px;
+  font-family: sans-serif;
+  padding-top: 12px;
+  /* margin-left: 36px;
+  margin-top: -120px; */
+ }
+
+.h2-style{
+  color: white;
+  font-size: 7vw;
+  font-family: sans-serif;
+  font-weight: 600;
+  padding-top: 100px;
+
+  ;
+  /* padding-left: -100px; */
+
+}
