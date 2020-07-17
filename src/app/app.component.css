@@ -1,75 +1,254 @@
-.img1{
-  background-image: url('src/assets/images/trip.jpg');
+.img1 {
+  background-image: url("src/assets/images/ran2.jpg");
   /* background: #3887CE; */
   background-repeat: no-repeat;
   background-size: cover;
+
 }
-.top-margin{
+.top-margin {
   margin-top: 20px;
 }
-.top-margin2{
+.top-margin2 {
   margin-top: 24px;
 }
-.position{
+.position {
   position: fixed;
 }
-.border-style{
+.border-style {
   border-style: none;
-  border-bottom-style:solid;
-  border-bottom-color:white ;
+  border-bottom-style: solid;
+  border-bottom-color: white;
 }
-
-a.text-clr:hover{
-  color:#00D8FF;
-  border-bottom: #00D8FF solid 2px;
+.search-font {
+  /* font-size: 1.6vw; */
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #6a6666;
+}
+a.text-clr:hover {
+  color: #00d8ff;
+  border-bottom: #00d8ff solid 2px;
   box-sizing: border-box;
-
   /* text-decoration: underline,white; */
 }
-.nav-link{
-  color: #00D8FF;
+.nav-link {
+  color: #00d8ff;
 }
-.navbar-brand{
+.navbar-brand {
   color: white;
   font-size: 25px;
   font-weight: 700;
 }
-.txt-style{
-  color:white;
+.txt-style {
+  color: white;
   font-size: 17px;
   font-weight: 600;
   font-family: sans-serif;
-  padding:11px 1px 29px;
+  padding: 11px 1px 29px;
   text-decoration: none;
 }
-
-.book-btn{
+.book-btn {
   color: white;
-  background:#00D8FF;
-  font-size:14px ;
+  background: #00d8ff;
+  font-size: 14px;
   font-family: sans-serif;
-  margin:5px 1px ;
+  margin: 5px 1px;
 }
-.explore-btn{
+.explore-btn {
   color: white;
-  background:#00D8FF;
-  font-size:16px ;
+  background: #00d8ff;
+  font-size: 16px;
   height: 60px;
   width: 200px;
   font-family: sans-serif;
   padding-top: 12px;
+  margin-bottom: 350px;
   /* margin-left: 36px;
   margin-top: -120px; */
- }
-
-.h2-style{
+}
+.h2-style {
   color: white;
   font-size: 7vw;
   font-family: sans-serif;
   font-weight: 600;
   padding-top: 100px;
-
-  ;
   /* padding-left: -100px; */
+}
+.div-search {
+  margin-top: -9vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 10vw;
+  background-color: white;
+  /* -webkit-box-shadow: 0px 0px 25px gainsboro ; */
+  box-shadow: 5px 5px 12px gainsboro;
+}
+.search-nav {
+  width: 13vw;
+  height: 4.5vw;
+  background-color: #00d8ff;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.7vw;
+  border-radius: 3px;
+}
+.margin-set {
+  margin-top: -8px;
+}
+.margin-set-left {
+  margin-left: -16px;
+}
+a.search-nav:hover {
+  background-color: white;
+  color: gray;
+}
+.text-Grey {
+  color: #c5c0c0;
+  font-weight: 500;
+}
+.search-btn {
+  color: white;
+  background: #00d8ff;
+  font-size: 16px;
+  height: 60px;
+  width: 185px;
+  font-family: sans-serif;
+  padding-top: 12px;
+}
+.radio-txt {
+  color: #6a6666;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+.icon-div {
+  margin-top: -4vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 10vw;
+  background-color: white;
+  /* -webkit-box-shadow: 0px 0px 25px gainsboro ; */
+}
+.icon-text {
+  color: #948a8a;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.icon-text2 {
+  color: #948a8a;
+  word-wrap: break-word;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+.dst-top {
+  margin-top: -40px;
+  }
+.destination-txt {
+  margin-top: 100px;
+  font-size: 33px;
+  font-weight: 600;
+  color: #485a5a;
+}
+.scroll-box {
+  scroll-behavior: smooth;
+}
+.zoom{
+float: left;
+width: 40.4vw;
+height: 23.5vw;
+/* height: 320px; */
+position: relative;
+margin: 0 auto;
+overflow: hidden;
+}
+.zoom:hover .img-zoom img{
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  /* color: chartreuse; */
+}
 
+.img-zoom{
+  position: absolute;
+  top:0;
+  left: 0;
+}
+.img-zoom img{
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease
+}
+.zoom2{
+  float: left;
+  width: 26.3vw;
+  height: 48.6vw;
+/* height: 320px; */
+position: relative;
+margin: 0 auto;
+overflow: hidden;
+}
+.zoom2:hover .img-zoom img{
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  /* color: chartreuse; */
+}
+.zoom3{
+  float: left;
+  width: 26.3vw;
+  height:23.5vw;
+/* height: 320px; */
+position: relative;
+margin: 0 auto;
+overflow: hidden;
+}
+.zoom3:hover .img-zoom img{
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  /* color: chartreuse; */
+}
+.zoom4{
+  float: left;
+  width: 54.2vw;
+  height: 23.19vw;
+/* height: 320px; */
+position: relative;
+margin: 0 auto;
+overflow: hidden;
+}
+.zoom4:hover .img-zoom img{
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  /* color: chartreuse; */
+}
+.img-text{
+  color: white;
+   font-size: 1.8vw;
+    margin-top:13vw;
+    margin-left: 4vw;
+    position: absolute;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.zoom:hover .img-text{
+  color:#21D8A8;
+}
+.zoom2:hover .img-text{
+  color:#21D8A8;
+}
+.zoom3:hover .img-text{
+  color:#21D8A8;
+}
+.zoom4:hover .img-text{
+  color:#21D8A8;
+}
+.img-text2{
+  font-size: 1.2vw;
+  margin-top: -14px;
+}
+.img2{
+  background-image: url('src/assets/images/laxmivill2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vw;
 }
