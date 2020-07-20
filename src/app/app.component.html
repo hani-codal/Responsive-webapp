@@ -14,8 +14,8 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ml-auto scroll-box ">
             <a href="#" class=" nav-item  txt-style text-clr  ml-3 ">Home</a>
-            <a href="#destination" class="nav-item txt-style text-clr ml-3" >Destination</a>
-            <a href="#" class="nav-item  txt-style text-clr ml-3">Packages</a>
+            <a href="#destination" class="nav-item txt-style text-clr ml-3">Destination</a>
+            <a href="#packages" class="nav-item  txt-style text-clr ml-3">Packages</a>
             <a href="#" class="nav-item  txt-style text-clr ml-3">SpecialOffers</a>
             <a href="#" class="nav-item txt-style text-clr ml-3">Blog</a>
             <a href="#" class="nav-item  txt-style text-clr ml-3">Subscription</a>
@@ -47,17 +47,17 @@
   <div class="control ">
     <nav class="navbar navbar-expand-md navbar-light ">
       <div class="navbar-nav  ">
-        <a href="#tour" class=" nav-item  search-nav pt-2 pl-4 margin-set margin-set-left" (click)="onTour()"><i class='fas fa-bus-alt mr-1 '
-            style='font-size:24px'></i>Tours</a>
-        <a href="#hotel" class="nav-item search-nav ml-1 pt-2 pl-4 margin-set"(click)="onHotel()" ><i class="fa fa-hotel"
-            style="font-size:24px"></i>Hotels</a>
-        <a href="#flights" class="nav-item search-nav ml-1 pt-2 pl-4 margin-set" (click)="onFlight()"><i class="fa fa-plane"
-            style="font-size:24px"></i>Flights</a>
+        <a href="#tour" class=" nav-item  search-nav pt-2 pl-4 margin-set margin-set-left" (click)="onTour()"><i
+            class='fas fa-bus-alt mr-1 ' style='font-size:24px'></i>Tours</a>
+        <a href="#hotel" class="nav-item search-nav ml-1 pt-2 pl-4 margin-set" (click)="onHotel()"><i
+            class="fa fa-hotel" style="font-size:24px"></i>Hotels</a>
+        <a href="#flights" class="nav-item search-nav ml-1 pt-2 pl-4 margin-set" (click)="onFlight()"><i
+            class="fa fa-plane" style="font-size:24px"></i>Flights</a>
       </div>
     </nav>
     <div class="container" *ngIf="isTour">
       <form>
-        <div class="row" #tour >
+        <div class="row" #tour>
           <div class="form-group col-md-4 ">
             <label class="mt-4 mr-4 search-font" for="sel1">Destination</label>
             <select class="form-control  text-Grey" id="sel1" style="width: 24.8vw;">
@@ -106,15 +106,17 @@
         </div>
         <div class="row  mt-4 ">
           <div class="col-md-1 mt-3">
-           <label class="search-font">Budget:</label>
+            <label class="search-font">Budget:</label>
 
           </div>
           <div class="col-md-5">
-            <ng5-slider value="2000" highValue="6000"  [options]="options" style="width: 250px;margin-bottom: 30px;"></ng5-slider>
+            <ng5-slider value="2000" highValue="6000" [options]="options" style="width: 250px;margin-bottom: 30px;">
+            </ng5-slider>
           </div>
           <div class="col-md-3"></div>
           <div class="col-md-3 ">
-            <button type="button" class="btn search-btn mb-4" style="margin-top: -2vw;float: right;" href="#">SEARCH</button>
+            <button type="button" class="btn search-btn mb-4" style="margin-top: -2vw;float: right;"
+              href="#">SEARCH</button>
           </div>
         </div>
       </form>
@@ -178,7 +180,8 @@
           </div>
           <div class="col-md-3"></div>
           <div class="col-md-3 mb-3 ">
-            <button type="button" class="btn search-btn mb-2" style="margin-top: -2vw;float: right;" href="#">SEARCH</button>
+            <button type="button" class="btn search-btn mb-2" style="margin-top: -2vw;float: right;"
+              href="#">SEARCH</button>
           </div>
         </div>
       </form>
@@ -188,8 +191,8 @@
         <div class="row">
           <div class="col-md-4 mt-4">
             <div class="radio">
-              <input type="radio" name="optradio"  checked ><label class="radio-txt ml-1">Round Trip</label>
-              <input type="radio" name="optradio" class="ml-5" ><label class="radio-txt ml-1">On Way</label>
+              <input type="radio" name="optradio" checked><label class="radio-txt ml-1">Round Trip</label>
+              <input type="radio" name="optradio" class="ml-5"><label class="radio-txt ml-1">On Way</label>
             </div>
           </div>
         </div>
@@ -258,7 +261,8 @@
           </div>
           <div class="col-md-2"></div>
           <div class="col-md-3 mb-3 ">
-            <button type="button" class="btn search-btn mb-2" style="margin-top: 2vw;float: right;" href="#">SEARCH</button>
+            <button type="button" class="btn search-btn mb-2" style="margin-top: 2vw;float: right;"
+              href="#">SEARCH</button>
           </div>
         </div>
       </form>
@@ -266,170 +270,373 @@
   </div>
 </div>
 <div class="icon-div ">
-  <div class="row " >
+  <div class="row ">
     <div class="col-md-4 mt-3">
       <div class="row ">
         <div class="col-md-3">
-          <img src="assets/icons/tourpackage.png"  class="mx-auto d-block"/>
+          <img src="assets/icons/tourpackage.png" class="mx-auto d-block" />
         </div>
         <div class="col-md-9">
           <p class="text-center mt-4 icon-text">Amazing Tour Packages</p>
           <p class="text-center mt-1 icon-text2">
             Duis aute irure dolor in velit<br>
-             esse cillum dolore eu fugiat<br> nulla.
-            </p>
+            esse cillum dolore eu fugiat<br> nulla.
+          </p>
         </div>
       </div>
     </div>
     <div class="col-md-4 mt-3">
       <div class="row">
         <div class="col-md-3 ">
-          <img src="assets/icons/hotel.png" class="mx-auto d-block"/>
+          <img src="assets/icons/hotel.png" class="mx-auto d-block" />
         </div>
         <div class="col-md-9">
           <p class="text-center mt-4 icon-text">Book Top Class Hotel</p>
           <p class="text-center mt-1 icon-text2">
             Duis aute irure dolor in velit<br>
-             esse cillum dolore eu fugiat<br> nulla.
-            </p>
+            esse cillum dolore eu fugiat<br> nulla.
+          </p>
         </div>
       </div>
     </div>
     <div class="col-md-4 mt-3">
       <div class="row">
         <div class="col-md-3">
-          <img src="assets/icons/flight.png"  class="mx-auto d-block"/>
+          <img src="assets/icons/flight.png" class="mx-auto d-block" />
         </div>
         <div class="col-md-9">
           <p class="text-center mt-4 icon-text">Online Flight Booking</p>
           <p class="text-center mt-1 icon-text2">
             Duis aute irure dolor in velit<br>
-             esse cillum dolore eu fugiat<br> nulla.
-            </p>
+            esse cillum dolore eu fugiat<br> nulla.
+          </p>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div >
+<div>
   <div class="dst-top" style="background-color: #F2F5F5;">
     <div class="row">
       <div class="col-md-3"></div>
-    <div class="col-md-6" style="text-align: center;">
-      <div class="destination-txt " id="destination" >Top Destination</div>
-      <div class="icon-text2 mt-4 mx-2" >Duis aute irure dolor in velit esse cillum dolore eu fugiat nulla.</div>
-    </div>
-    <div class="col-md-3"></div>
+      <div class="col-md-6" style="text-align: center;">
+        <div class="destination-txt " id="destination">Top Destination</div>
+        <div class="icon-text2 mt-4 mx-2">Duis aute irure dolor in velit esse cillum dolore eu fugiat nulla.</div>
+      </div>
+      <div class="col-md-3"></div>
     </div>
 
     <div class="" style="margin-top: 50px;">
       <div class="row ">
-       <div class="col-md-1">
-       </div>
-       <div class="col-md-10">
-         <div class="row">
-          <div class="col-sm-6 mt-4 " >
-            <div class="zoom">
-              <div class="img-zoom">
-                <img src="assets/images/amritsar2.jpg"  />
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-sm-6 mt-4 ">
+              <div class="zoom">
+                <div class="img-zoom">
+                  <img src="assets/images/amritsar2.jpg" />
 
+                </div>
+                <div class="img-text">
+                  <p>Amritsar</p>
+                  <p class="img-text2">12&nbsp;&nbsp;&nbsp;Tours</p>
+                  <p class="img-text2">10&nbsp;&nbsp;&nbsp;Places</p>
+                </div>
               </div>
-              <div class="img-text">
-                <p>Amritsar</p>
-                <p class="img-text2">12&nbsp;&nbsp;&nbsp;Tours</p>
-                <p class="img-text2">10&nbsp;&nbsp;&nbsp;Places</p>
-              </div>
-            </div>
 
               <!-- <img src="assets/images/amritsar.jpg" style="width: 40.4vw; height: 23.5vw; " class="zoom"/>
               <div class="bottom-left zoom" style="color: white;margin-top: -30px;">hani</div> -->
 
 
-          </div>
-         <div class="col-md-6 mt-4">
-          <div class="zoom">
-            <div class="img-zoom">
-              <img src="assets/images/ujjain4.jpg"  />
             </div>
-            <div class="img-text">
-              <p>Ujjain</p>
-              <p class="img-text2">10&nbsp;&nbsp;&nbsp;Tours</p>
-              <p class="img-text2">9&nbsp;&nbsp;&nbsp;Places</p>
-            </div>
-          </div>
-         </div>
-         </div>
-         <div class="row"  >
-           <div class="col-md-4 mt-4">
-            <div class="zoom2">
-              <div class="img-zoom">
-                <img src="assets/images/hampi3.jpg"  />
-              </div>
-              <div class="img-text">
-                <p>Hampi</p>
-                <p class="img-text2">11&nbsp;&nbsp;&nbsp;Tours</p>
-                <p class="img-text2">19&nbsp;&nbsp;&nbsp;Places</p>
-              </div>
-            </div>
-           </div>
-           <div class="col-md-8">
-            <div class="row">
-              <div class="col-md-6 mt-4">
-                <div class="zoom3">
-                  <div class="img-zoom">
-                    <img src="assets/images/kumbhmela3.jpg"  />
-                  </div>
-                  <div class="img-text">
-                    <p>Haridwara</p>
-                    <p class="img-text2">9&nbsp;&nbsp;&nbsp;Tours</p>
-                    <p class="img-text2">14&nbsp;&nbsp;&nbsp;Places</p>
-                  </div>
+            <div class="col-md-6 mt-4">
+              <div class="zoom">
+                <div class="img-zoom">
+                  <img src="assets/images/ujjain4.jpg" />
                 </div>
-                <!-- <img src="assets/images/kumbhmela2.jpg"  style="width: 26.3vw; height:23.5vw;"/> -->
-              </div>
-              <div class="col-md-6 mt-4">
-                <div class="zoom3">
-                  <div class="img-zoom">
-                    <img src="assets/images/vaishnov devi2.jpg"  />
-                  </div>
-                  <div class="img-text">
-                    <p>VaishnoDevi</p>
-                    <p class="img-text2">12&nbsp;&nbsp;&nbsp;Tours</p>
-                    <p class="img-text2">8&nbsp;&nbsp;&nbsp;Places</p>
-                  </div>
+                <div class="img-text">
+                  <p>Ujjain</p>
+                  <p class="img-text2">10&nbsp;&nbsp;&nbsp;Tours</p>
+                  <p class="img-text2">9&nbsp;&nbsp;&nbsp;Places</p>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mt-4">
+              <div class="zoom2">
+                <div class="img-zoom">
+                  <img src="assets/images/hampi3.jpg" />
+                </div>
+                <div class="img-text">
+                  <p>Hampi</p>
+                  <p class="img-text2">11&nbsp;&nbsp;&nbsp;Tours</p>
+                  <p class="img-text2">19&nbsp;&nbsp;&nbsp;Places</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-md-6 mt-4">
+                  <div class="zoom3">
+                    <div class="img-zoom">
+                      <img src="assets/images/kumbhmela3.jpg" />
+                    </div>
+                    <div class="img-text">
+                      <p>Haridwara</p>
+                      <p class="img-text2">9&nbsp;&nbsp;&nbsp;Tours</p>
+                      <p class="img-text2">14&nbsp;&nbsp;&nbsp;Places</p>
+                    </div>
+                  </div>
+                  <!-- <img src="assets/images/kumbhmela2.jpg"  style="width: 26.3vw; height:23.5vw;"/> -->
+                </div>
+                <div class="col-md-6 mt-4">
+                  <div class="zoom3">
+                    <div class="img-zoom">
+                      <img src="assets/images/vaishnov devi2.jpg" />
+                    </div>
+                    <div class="img-text">
+                      <p>VaishnoDevi</p>
+                      <p class="img-text2">12&nbsp;&nbsp;&nbsp;Tours</p>
+                      <p class="img-text2">8&nbsp;&nbsp;&nbsp;Places</p>
+                    </div>
+                  </div>
 
+                </div>
               </div>
-            </div>
-            <div class="row" >
-              <div class="col-md-12 mt-4" >
-                <div class="zoom4">
-                  <div class="img-zoom">
-                    <img src="assets/images/vrindavan3.jpg"  />
-                  </div>
-                  <div class="img-text">
-                    <p>Vrindavan</p>
-                    <p class="img-text2">10&nbsp;&nbsp;&nbsp;Tours</p>
-                    <p class="img-text2">15&nbsp;&nbsp;&nbsp;Places</p>
+              <div class="row">
+                <div class="col-md-12 mt-4">
+                  <div class="zoom4">
+                    <div class="img-zoom">
+                      <img src="assets/images/vrindavan3.jpg" />
+                    </div>
+                    <div class="img-text">
+                      <p>Vrindavan</p>
+                      <p class="img-text2">10&nbsp;&nbsp;&nbsp;Tours</p>
+                      <p class="img-text2">15&nbsp;&nbsp;&nbsp;Places</p>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div style="margin-bottom: 130px;"></div>
             </div>
-            <div style="margin-bottom: 130px;"></div>
           </div>
-         </div>
-       </div>
-       <div class="col-md-1"></div>
+        </div>
+        <div class="col-md-1"></div>
       </div>
-   </div>
-     </div>
-<div class="img2">
-<div class="row ">
-  <div class="col-md-2"></div>
-  <div class="col-md-8" style="font-size: 30px; color: white;">
-    Join With Us Within 21 January, 2018 And Get Upto 40% Discount
-
+    </div>
   </div>
-  <div class="col-md-2"></div>
-</div>
+  <div class="img2">
+    <div class="row ">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="div-text2 ">
+          Join With Us Within 21 January, 2018 And Get Upto 40% Discount
+        </div>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <div style="position: relative;">
+              <div id="demo"
+                class="time-textblock">
+              </div>
+              <button class="btn join-btn" type="button">JOIN NOW</button>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+        <div class="row"></div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+    <div>
+    </div>
+  </div>
+<div>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6" style="text-align: center;">
+      <div class="destination-txt " id="packages">Special Packages</div>
+      <div class="icon-text2 mt-4 mx-2">Duis aute irure dolor in velit esse cillum dolore eu fugiat nulla.</div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <div class="row" style="margin-top: 50px;">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <div class="row">
+        <div class="col-md-4 " style="margin-top: 30px;">
+          <div style="border: black solid 1px;" >
+            <div >
+              <img src="assets/images/gujarat3.jpg" style="display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 100%;" />
+            </div>
+            <div style="font-size: 20px;font-weight: 600;font-family:  sans-serif;margin: 10px 0px;color: #696969;">
+              <span style="float: left;margin-left: 20px;">Gujarat</span><span style="float: right;margin-right: 20px;">₹5000</span>
+            </div>
+
+
+            <hr style="margin-top: 50px;width: 90%; background-color: gainsboro;">
+            <div style="margin: 0 20px;" class="text-Gray">
+              >5 Days 6 Nights&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>5 Star<br>
+              Accomodation<br><br>
+              >Transportation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>Food Facilities<br><br>
+              <span class="fa fa-star" style="color:#FEC205 ;margin-right: 1px;" *ngFor="let i of [1,2,3,4,5] "> </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>5000 Review</span>
+
+              <br>
+              <button class="btn booknow-btn " type="button">Book Now</button>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+        <div class="col-md-4 " style="margin-top: 30px;" >
+          <div style="border: black solid 1px;" >
+            <div >
+              <img src="assets/images/gujarat3.jpg" style="display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 100%;" />
+            </div>
+            <div style="font-size: 20px;font-weight: 600;font-family:  sans-serif;margin: 10px 0px;color: #696969;">
+              <span style="float: left;margin-left: 20px;">Gujarat</span><span style="float: right;margin-right: 20px;">₹5000</span>
+            </div>
+
+
+            <hr style="margin-top: 50px;width: 90%; background-color: gainsboro;">
+            <div style="margin: 0 20px;" class="text-Gray">
+              >5 Days 6 Nights&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>5 Star<br>
+              Accomodation<br><br>
+              >Transportation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>Food Facilities<br><br>
+              <span class="fa fa-star" style="color:#FEC205 ;margin-right: 1px;" *ngFor="let i of [1,2,3,4,5] "> </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>5000 Review</span>
+
+              <br>
+              <button class="btn booknow-btn " type="button">Book Now</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 " style="margin-top: 30px;" >
+          <div style="border: black solid 1px;" >
+            <div >
+              <img src="assets/images/gujarat3.jpg" style="display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 100%;" />
+            </div>
+            <div style="font-size: 20px;font-weight: 600;font-family:  sans-serif;margin: 10px 0px;color: #696969;">
+              <span style="float: left;margin-left: 20px;">Gujarat</span><span style="float: right;margin-right: 20px;">₹5000</span>
+            </div>
+
+
+            <hr style="margin-top: 50px;width: 90%; background-color: gainsboro;">
+            <div style="margin: 0 20px;" class="text-Gray">
+              >5 Days 6 Nights&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>5 Star<br>
+              Accomodation<br><br>
+              >Transportation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>Food Facilities<br><br>
+              <span class="fa fa-star" style="color:#FEC205 ;margin-right: 1px;" *ngFor="let i of [1,2,3,4,5] "> </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>5000 Review</span>
+
+              <br>
+              <button class="btn booknow-btn " type="button">Book Now</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row" >
+        <div class="col-md-4 " style="margin-top:30px;" >
+          <div style="border: black solid 1px;" >
+            <div >
+              <img src="assets/images/gujarat3.jpg" style="display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 100%;" />
+            </div>
+            <div style="font-size: 20px;font-weight: 600;font-family:  sans-serif;margin: 10px 0px;color: #696969;">
+              <span style="float: left;margin-left: 20px;">Gujarat</span><span style="float: right;margin-right: 20px;">₹5000</span>
+            </div>
+
+
+            <hr style="margin-top: 50px;width: 90%; background-color: gainsboro;">
+            <div style="margin: 0 20px;" class="text-Gray">
+              >5 Days 6 Nights&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>5 Star<br>
+              Accomodation<br><br>
+              >Transportation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>Food Facilities<br><br>
+              <span class="fa fa-star" style="color:#FEC205 ;margin-right: 1px;" *ngFor="let i of [1,2,3,4,5] "> </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>5000 Review</span>
+
+              <br>
+              <button class="btn booknow-btn " type="button">Book Now</button>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+        <div class="col-md-4 " style="margin-top: 30px;">
+          <div style="border: black solid 1px;" >
+            <div >
+              <img src="assets/images/gujarat3.jpg" style="display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 100%;" />
+            </div>
+            <div style="font-size: 20px;font-weight: 600;font-family:  sans-serif;margin: 10px 0px;color: #696969;">
+              <span style="float: left;margin-left: 20px;">Gujarat</span><span style="float: right;margin-right: 20px;">₹5000</span>
+            </div>
+
+
+            <hr style="margin-top: 50px;width: 90%; background-color: gainsboro;">
+            <div style="margin: 0 20px;" class="text-Gray">
+              >5 Days 6 Nights&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>5 Star<br>
+              Accomodation<br><br>
+              >Transportation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>Food Facilities<br><br>
+              <span class="fa fa-star" style="color:#FEC205 ;margin-right: 1px;" *ngFor="let i of [1,2,3,4,5] "> </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>5000 Review</span>
+
+              <br>
+              <button class="btn booknow-btn " type="button">Book Now</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 " style="margin-top: 30px;" >
+          <div style="border: black solid 1px;" >
+            <div >
+              <img src="assets/images/gujarat3.jpg" style="display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 100%;" />
+            </div>
+            <div style="font-size: 20px;font-weight: 600;font-family:  sans-serif;margin: 10px 0px;color: #696969;">
+              <span style="float: left;margin-left: 20px;">Gujarat</span><span style="float: right;margin-right: 20px;">₹5000</span>
+            </div>
+
+
+            <hr style="margin-top: 50px;width: 90%; background-color: gainsboro;">
+            <div style="margin: 0 20px;" class="text-Gray">
+              >5 Days 6 Nights&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>5 Star<br>
+              Accomodation<br><br>
+              >Transportation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>Food Facilities<br><br>
+              <span class="fa fa-star" style="color:#FEC205 ;margin-right: 1px;" *ngFor="let i of [1,2,3,4,5] "> </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>5000 Review</span>
+
+              <br>
+              <button class="btn booknow-btn " type="button">Book Now</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+    <div class="col-md-1"></div>
+  </div>
 </div>
