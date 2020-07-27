@@ -1,5 +1,6 @@
 .img1 {
-  background-image: url("src/assets/images/ran2.jpg");
+  /* background-image: url("src/assets/images/ran2.jpg"); */
+  background-image: url('src/assets/images/gangama.jpg');
   /* background: #3887CE; */
   background-repeat: no-repeat;
   background-size: cover;
@@ -294,4 +295,49 @@ overflow: hidden;
   margin-bottom: 20px;
   background-color: #00d8ff;
   color: white;
+}
+.img-shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.img-shadow:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.client-review{
+  margin-top: 30px;
+  width: 100% ;
+  background-color: white;
+  height: 400px;
+}
+.swipe{
+  overflow:auto;
+  white-space:nowrap;
+}
+.client-img{
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  margin-top:40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.client-txt{
+  color: #a6a6a6;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+.add-txt{
+  color:#a6a6a6;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: sans-serif;
+}
+.dot-icon{
+  border: solid 1px gray;
+  border-radius: 50%;
+  margin: 0px auto;
+  width: 15px;
+  height: 15px;
+  background-color: gray  ;
 }
