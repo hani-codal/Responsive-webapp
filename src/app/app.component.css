@@ -341,3 +341,7 @@ overflow: hidden;
   height: 15px;
   background-color: gray  ;
 }
+.iconColor{
+  border: solid 1px #00d8ff;
+  background-color: #00d8ff  ;
+}

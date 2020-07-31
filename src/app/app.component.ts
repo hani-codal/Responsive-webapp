@@ -67,5 +67,31 @@ export class AppComponent {
   }
 }, 1000);
 
+isImgBox2=false;
+isImgBox1=true;
+isImgBox3=false;
+toImgSlide2(){
+if(!this.isImgBox2){
+this.isImgBox2=true;
+this.isImgBox1=false;
+this.isImgBox3=false;
+}
+}
+toImgSlide1(){
+  if(!this.isImgBox1){
+  this.isImgBox1=true;
+  this.isImgBox2=false;
+  this.isImgBox3=false;
+  }
+}
+toImgSlide3(){
+  if(!this.isImgBox3){
+    this.isImgBox3=true;
+    this.isImgBox2=false;
+    this.isImgBox1=false;
+    }
+}
+
 
 }
+

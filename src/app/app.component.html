@@ -617,11 +617,13 @@
     </div>
     <div class="col-md-3"></div>
   </div>
+
     <div class="row" style="margin-top: 50px;">
       <div class="col-md-1"></div>
       <div class="col-md-10" style="margin-bottom: 50px;">
-        <div class="row ">
-          <div class="col-md-4" style="width: 100%;" id="img1" >
+
+        <div class="row " id="img1" *ngIf="isImgBox1">
+          <div class="col-md-4 w3-container w3-center w3-animate-right" style=" animation-duration: 2s;width: 100%;" >
             <div class=" client-review img-shadow">
               <div class="swipe">
                 <img src="assets/images/girl.jpg" class="client-img">
@@ -644,7 +646,7 @@
             </div>
 
           </div>
-          <div class="col-md-4" >
+          <div class="col-md-4 w3-container w3-center w3-animate-right" style=" animation-duration: 2s;width: 100%;" >
             <div class=" client-review img-shadow">
               <div  class="swipe">
                 <img src="assets/images/girl2.png" class="client-img" >
@@ -667,7 +669,7 @@
             </div>
 
           </div>
-          <div class="col-md-4" >
+          <div class="col-md-4 w3-container w3-center w3-animate-right" style=" animation-duration: 2s;width: 100%;" >
             <div class=" client-review img-shadow">
               <div  class="swipe">
                 <img src="assets/images/girl.jpg" class="client-img">
@@ -689,14 +691,174 @@
               </div>
             </div>
           </div>
+
+
         </div>
+
+
+<!--div 2-->
+<div class="row " id="img2" *ngIf="isImgBox2">
+  <div class="col-md-4 w3-container w3-center w3-animate-right" style=" animation-duration: 2s;width: 100%;"  >
+    <div class=" client-review img-shadow">
+      <div class="swipe">
+        <img src="assets/images/girl2.png" class="client-img">
+      </div>
+      <div style="margin: 20px 0px; text-align: center;">
+        <i class="fa fa-quote-left" aria-hidden="true"
+        style="color: gainsboro;"></i>
+      </div>
+      <div style="text-align: center;" >
+        <p class="client-txt">
+     Traveling brings Joy to your life,<br>
+     It makes you a better person,<br>
+     It makes you more helpful towards people,<br>
+       It brings you out of your comfortzone,<br>
+       It makes you feel alive.
+        </p>
+        <span class="client-txt" style="color:#00d8ff ;font-weight: 600;margin-top: 50px;">Hani Joshi</span><br>
+        <span class="add-txt">Mahesana, Gujarat</span>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-md-4 w3-container w3-center w3-animate-right" style=" animation-duration: 2s;width: 100%;" >
+    <div class=" client-review img-shadow">
+      <div  class="swipe">
+        <img src="assets/images/girl.jpg" class="client-img" >
+      </div>
+      <div style="margin: 20px 0px; text-align: center;">
+        <i class="fa fa-quote-left" aria-hidden="true"
+        style="color: gainsboro;"></i>
+      </div>
+      <div style="text-align: center;" >
+        <p class="client-txt">
+     Traveling brings Joy to your life,<br>
+     It makes you a better person,<br>
+     It makes you more helpful towards people,<br>
+       It brings you out of your comfortzone,<br>
+       It makes you feel alive.
+        </p>
+        <span class="client-txt" style="color:#00d8ff ;font-weight: 600;margin-top: 50px;">Hani Joshi</span><br>
+        <span class="add-txt">Mahesana, Gujarat</span>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-md-4 w3-container w3-center w3-animate-right" style=" animation-duration: 2s;width: 100%;" >
+    <div class=" client-review img-shadow">
+      <div  class="swipe">
+        <img src="assets/images/girl2.png" class="client-img">
+      </div>
+      <div style="margin: 20px 0px; text-align: center;">
+        <i class="fa fa-quote-left" aria-hidden="true"
+        style="color: gainsboro;"></i>
+      </div>
+      <div style="text-align: center;" >
+        <p class="client-txt">
+     Traveling brings Joy to your life,<br>
+     It makes you a better person,<br>
+     It makes you more helpful towards people,<br>
+       It brings you out of your comfortzone,<br>
+       It makes you feel alive.
+        </p>
+        <span class="client-txt" style="color:#00d8ff ;font-weight: 600;margin-top: 50px;">Hani Joshi</span><br>
+        <span class="add-txt">Mahesana, Gujarat</span>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<!--div3-->
+<div class="row " id="img3" *ngIf="isImgBox3">
+  <div class="col-md-4 w3-container w3-center w3-animate-right" style=" animation-duration: 2s;width: 100%;"  >
+    <div class=" client-review img-shadow">
+      <div class="swipe">
+        <img src="assets/images/girl3.jpg" class="client-img">
+      </div>
+      <div style="margin: 20px 0px; text-align: center;">
+        <i class="fa fa-quote-left" aria-hidden="true"
+        style="color: gainsboro;"></i>
+      </div>
+      <div style="text-align: center;" >
+        <p class="client-txt">
+     Traveling brings Joy to your life,<br>
+     It makes you a better person,<br>
+     It makes you more helpful towards people,<br>
+       It brings you out of your comfortzone,<br>
+       It makes you feel alive.
+        </p>
+        <span class="client-txt" style="color:#00d8ff ;font-weight: 600;margin-top: 50px;">Hani Joshi</span><br>
+        <span class="add-txt">Mahesana, Gujarat</span>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-md-4 w3-container w3-center w3-animate-right" style=" animation-duration: 2s;width: 100%;" >
+    <div class=" client-review img-shadow">
+      <div  class="swipe">
+        <img src="assets/images/girl2.png" class="client-img" >
+      </div>
+      <div style="margin: 20px 0px; text-align: center;">
+        <i class="fa fa-quote-left" aria-hidden="true"
+        style="color: gainsboro;"></i>
+      </div>
+      <div style="text-align: center;" >
+        <p class="client-txt">
+     Traveling brings Joy to your life,<br>
+     It makes you a better person,<br>
+     It makes you more helpful towards people,<br>
+       It brings you out of your comfortzone,<br>
+       It makes you feel alive.
+        </p>
+        <span class="client-txt" style="color:#00d8ff ;font-weight: 600;margin-top: 50px;">Hani Joshi</span><br>
+        <span class="add-txt">Mahesana, Gujarat</span>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-md-4 w3-container w3-center w3-animate-right" style=" animation-duration: 2s;width: 100%;" >
+    <div class=" client-review img-shadow">
+      <div  class="swipe">
+        <img src="assets/images/girl.jpg" class="client-img">
+      </div>
+      <div style="margin: 20px 0px; text-align: center;">
+        <i class="fa fa-quote-left" aria-hidden="true"
+        style="color: gainsboro;"></i>
+      </div>
+      <div style="text-align: center;" >
+        <p class="client-txt">
+     Traveling brings Joy to your life,<br>
+     It makes you a better person,<br>
+     It makes you more helpful towards people,<br>
+       It brings you out of your comfortzone,<br>
+       It makes you feel alive.
+        </p>
+        <span class="client-txt" style="color:#00d8ff ;font-weight: 600;margin-top: 50px;">Hani Joshi</span><br>
+        <span class="add-txt">Mahesana, Gujarat</span>
+      </div>
+    </div>
+  </div>
+
+
       </div>
       <div class="col-md-1"></div>
     </div>
-<div >
-  <a  href="#img1"><i class="fa fa-circle" style="color: gray; margin-left: 48vw ;margin-right: 5px;" aria-hidden="true" ></i></a>
-  <i class="fa fa-circle" style="color: gray; margin-right: 5px;" aria-hidden="true"></i>
-  <i class="fa fa-circle" style="color: gray; margin-right: 5px;" aria-hidden="true"></i>
+
+
+<div>
+  <a  href="#img1" (click)="toImgSlide1()" >
+  <i class="fa fa-circle" style="color: gray; margin-left: 48vw ;margin-right: 5px;" aria-hidden="true"
+   [ngStyle]="{'color':isImgBox1?'#00d8ff':'gray'}" ></i>
+</a>
+  <a href="#img2" (click)="toImgSlide2()"><i class="fa fa-circle" style="color: gray; margin-right: 5px;" aria-hidden="true"
+    [ngStyle]="{'color':isImgBox2?'#00d8ff':'gray'}"></i></a>
+  <a href="#img3" (click)="toImgSlide3()">
+    <i class="fa fa-circle" style="color: gray; margin-right: 5px;" aria-hidden="true"
+    [ngStyle]="{'color':isImgBox3?'#00d8ff':'gray'}"
+    ></i>
+  </a>
 </div>
 
 <!-- <div class="dot-icon">
@@ -713,3 +875,7 @@
 
   </div>
 
+  <div >
+    <h1>Animation is Fun!</h1>
+    <p>The w3-animate-top class slides in an element from the top.</p>
+  </div>
